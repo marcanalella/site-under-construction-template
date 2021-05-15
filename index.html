@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html>
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+  }
+
+  {% include head.html %}
+  .bgimg {
+    background-image: url('https://www.b-fast.it/wp-content/uploads/2020/02/come-aggiungere-gif-animate-in-wordpress.gif');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+<body>
+  <main class="page-content" aria-label="Content">
+    <div id="bg" style="margin: 0;
+  padding: 0; background: url({{site.url}}/images/background.jpg) center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover; opacity:0.2">
+  </div>
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+<div id="container">
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  {{ content }}
+  {% include footer.html %}
+  .middle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+
+</div>
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+</style>
+
+<body>
+
+  <div class="bgimg">
+    <div class="topleft">
+    </div>
+    <div class="middle">
+      <h1>COMING SOON </h1>
+    </div>
+    <div class="bottomleft">
+      <p>Site Under construction by <a href="https://www.mariocanalella.pw" target="_blank">canalella.com</a></p>
+      <p>If necessary, <a href="https://www.mariocanalella.pw/contact" target="_blank">contact me</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
+</html>
