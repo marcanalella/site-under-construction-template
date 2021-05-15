@@ -1,2 +1,3 @@
-# site-under-construction-template
-Simple HTML CSS template for site under construction view
+# Site Under Construction Ttemplate
+## Simple HTML CSS template for site under construction view
+### Deploy and Enjoy!
