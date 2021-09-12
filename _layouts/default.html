@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
 <style>
   body,
   html {
@@ -53,8 +54,17 @@
       <h1>COMING SOON </h1>
     </div>
     <div class="bottomleft">
-      <p>Site Under construction by <a href="https://www.mariocanalella.pw" target="_blank">canalella.com</a></p>
-      <p>If necessary, <a href="https://www.mariocanalella.pw/contact" target="_blank">contact me</a></p>
+      <p>Site Under construction by
+        <a href="{{ site.author-site | escape }}" target="_blank">
+          {{ site.author | escape }}
+        </a>
+      </p>
+      {% for socialinfo in site.social-links %}
+      <li>
+        {% include icon-{{ socialinfo.name }}.html username=socialinfo.username %}
+      </li>
+      {% endfor %}
+      <p>If necessary, <a href="mailto:{{ site.email | escape }}">contact</a></p>
     </div>
   </div>
 
